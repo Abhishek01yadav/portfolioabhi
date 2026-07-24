@@ -306,6 +306,7 @@ nav a{
     margin-top: 30px;
 }
 .project{
+    
     background-color: #1e1e1e;
     border-radius: 12px;
     border: 1px solid #3a3a3a;
@@ -313,6 +314,9 @@ nav a{
     transition: 0.3s ease ,box-shadow 0.3 s ease;
 
 
+}
+.project a{
+    text-decoration: none;
 }
 .project:hover{
     transform: translateY(-5px);
@@ -349,3 +353,21 @@ nav a{
     font-size: 0.75rem;
     margin-right: 5px;
 }
+
+
+item,
+.project{
+    opacity:0;
+    transform:translateY(40px);
+    transition:.6s;
+}
+
+.item.show,
+.project.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+
+
