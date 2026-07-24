@@ -369,5 +369,56 @@ item,
 }
 
 
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.4s ease;
+}
+
+.modal-content{
+    width: 400px;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-content h2{
+    color:#FFBF00;
+    margin-bottom:15px;
+}
+
+.modal-content p{
+    color:#e0e0e0;
+    margin-bottom:25px;
+}
+
+#exploreBtn{
+    background:#FFBF00;
+    color:#000;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+#exploreBtn:hover{
+    transform:scale(1.05);
+}
+
+.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+
 
 

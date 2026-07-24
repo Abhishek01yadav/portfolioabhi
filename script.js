@@ -142,6 +142,22 @@ profile.addEventListener("mouseleave",()=>{
 
 console.log("Welcome to Abhishek's Portfolio 🚀");
 
+
+const modal = document.getElementById("welcomeModal");
+const exploreBtn = document.getElementById("exploreBtn");
+
+exploreBtn.addEventListener("click", () => {
+
+    modal.classList.add("hide");
+
+    // Fade animation ke baad remove
+    setTimeout(() => {
+        modal.remove();
+    }, 400);
+
+});
+
+
 /*
 
 ✨ Typing animation
